@@ -1,0 +1,10 @@
+.hollycode {
+  display: block;
+  height: 80%;
+  width: 40%;
+}
+
+.crud i {
+  float: right;
+  color: map-get($colors, secondary);
+}

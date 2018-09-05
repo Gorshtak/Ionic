@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img src="../assets/imgs/logo.svg" class="hollycode">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Name:</ion-label>
+      <ion-input type="text" [(ngModel)]="user.name" name="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" fixed>Username:</ion-label>
+      <ion-input type="text" [(ngModel)]="user.username" name="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>Email:</ion-label>
+      <ion-input type="email" [(ngModel)]="user.email" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" fixed>Phone Number:</ion-label>
+      <ion-input type="text" [(ngModel)]="user.phone" name="phone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>City:</ion-label>
+      <ion-input type="text" [(ngModel)]="user.city" name="city"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>Street:</ion-label>
+      <ion-input type="text" [(ngModel)]="user.street" name="street"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" fixed>Suite:</ion-label>
+      <ion-input type="text" [(ngModel)]="user.suite" name="suite"></ion-input>
+    </ion-item>
+    <button ion-button large round (click)="createUser()">Create User</button>
+  </ion-list>
+</ion-content>

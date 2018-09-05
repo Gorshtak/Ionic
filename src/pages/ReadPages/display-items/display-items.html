@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img src="../assets/imgs/logo.svg" class="hollycode">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list no-lines>
+    <div *ngFor="let item of items" class="user-container fadeIn">
+      <button ion-item (click)="itemSelected(item)" class="user-name">
+        <i class="fas fa-user"></i>
+        {{item.name}}
+      </button>
+      <button class="edit-delete" (click)="itemDeleted(item)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+      <button class="edit-delete" (click)="itemUpdated(item)">
+        <i class="far fa-edit"></i>
+      </button>
+    </div>
+  </ion-list>
+</ion-content>

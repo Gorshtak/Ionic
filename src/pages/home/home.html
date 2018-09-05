@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img src="../assets/imgs/logo.svg" class="hollycode">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list no-lines>
+    <button class="crud" ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item.title }}
+      <i [class]="item.icon"></i>
+    </button>
+  </ion-list>
+</ion-content>

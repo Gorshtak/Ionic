@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img src="../assets/imgs/logo.svg" class="hollycode">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let key of keys">
+      <ion-label *ngIf="update == '0'">{{items[key]}}</ion-label>
+      <ion-input type="text" [(ngModel)]="items[key]" *ngIf="update == '1'" name="{{key}}"></ion-input>
+    </ion-item>
+    <button ion-button large round (click)="updateUser()" *ngIf="update == '1'">Update User</button>
+  </ion-list>
+</ion-content>

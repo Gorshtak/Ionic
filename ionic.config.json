@@ -1,0 +1,22 @@
+{
+  "name": "Hollycode",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/users",
+      "proxyUrl": "http://localhost:3000/users"
+    },
+    {
+      "path": "/update",
+      "proxyUrl": "http://localhost:3000/update"
+    },
+    {
+      "path": "/*",
+      "proxyUrl": "http://localhost:3000"
+    }
+
+  ]
+}
